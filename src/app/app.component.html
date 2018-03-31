@@ -27,8 +27,8 @@
             <i class="fas fa-chess-knight fa-lg li-icon"></i>
           </span>
           <p>
-            Amante de los Idiomas, Juegos de mesa, Rompecabezas, Video juegos, Paintball y Viajar.
-            Hablo español (Nativo), Inglés y Francés (aún aprendiendo).
+            Amante de los Idiomas, Juegos de mesa, Rompecabezas, Video juegos, Paintball y Viajar. Hablo español (Nativo), Inglés y Francés
+            (aún aprendiendo).
           </p>
         </li>
         <li>
@@ -59,8 +59,33 @@
 
 <section class="skills-section">
   <div class="row">
+    <div class="col s12 m8 l9 valign-wrapper">
+        <h4 class="header">Habilidades</h4>
+    </div>
+    <div class="col s12 m4 l3 switch-chart">
+      <div class="switch right-align">
+        <label>
+          Barras
+          <input type="checkbox" [checked]="showCirclesGraph" (change)="showCirclesGraph = !showCirclesGraph">
+          <span class="lever"></span>
+          Círculos
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="!showCirclesGraph">
+    <div class="col s12 m6 l6" *ngFor="let skill of skills">
+      <div>{{skill.name}}</div>
+      <div class="progress hoverable">
+        <div class="determinate hoverable" [style.width.%]="skill.current" [style.background-color]="skill.current | statusColor">
+          <div class="text-progress">{{skill.current}}%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="showCirclesGraph">
     <div class="col s6 m2" *ngFor="let skill of skills">
-      <div class="progress-wrapper">
+      <div class="progress-wrapper hoverable">
         <round-progress [current]="skill.current" [max]="skill.max" [color]="skill.current | statusColor" [responsive]="true"></round-progress>
         <div class="text">{{skill.current}} %</div>
       </div>

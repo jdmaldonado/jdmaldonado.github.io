@@ -11,12 +11,17 @@ import { faChessKnight } from '@fortawesome/fontawesome-free-solid';
 export class AppComponent implements OnInit {
 
   public skills: Array<any>;
+  public showCirclesGraph: Boolean = false;
 
   constructor() {
     fontawesome.library.add(faChessKnight);
   }
 
   ngOnInit(): void {
+    this._initSkills();
+  }
+
+  private _initSkills(): void {
     this.skills = [
       {
         current: 90,
@@ -72,7 +77,7 @@ export class AppComponent implements OnInit {
         current: 40,
         max: 100,
         name: 'VueJs',
-      },
+      }
     ];
   }
 }

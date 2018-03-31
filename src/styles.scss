@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+$primary-color: #8BC34A;
 body,
 html {
   height: 100%;
@@ -19,13 +20,36 @@ p {
 }
 
 strong {
-  color: #8BC34A;
+  color: $primary-color;
 }
 
 .green-text {
-  color: #8BC34A;
+  color: $primary-color;
 }
 
 .li-icon {
-  color: #8BC34A !important;
+  color: $primary-color !important;
+}
+
+.progress {
+  height: 30px !important;
+  background-color: rgb(234, 234, 234) !important;
+  border-radius: 4px !important;
+  text-align: center;
+}
+
+.progress .determinate {
+  width: 0%;
+  border-radius: 4px !important;
+  color: #FFF;
+  transition: 3s;
+  transition-property: width;
+}
+
+.progress .determinate:hover {
+  width: 100%;
+}
+
+.text-progress {
+  padding-top: 2px;
 }
