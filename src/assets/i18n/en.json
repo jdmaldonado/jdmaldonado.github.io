@@ -1,0 +1,11 @@
+{
+    "PRESENTATION_1": "Hi, My name is {{name}}, i'm a Colombian Software Developer.",
+    "PRESENTATION_2": "I love the languages, board games, puzzles. video games and traveling, i speak spanish (native), english and french (still learning).",
+    "PRESENTATION_3": "I've been developing for 6 years, in different technologies FrontEnd and BackEnd, i have experience in areas like Radio station, Satelital Geopositioning, ERP, Mobile Applications... etc.",
+    "PRESENTATION_4": "Cofounder of {{socialBusiness}}, Javascript speaker and big lover of Google's Technologies.",
+
+    "SKILLS": "Skills",
+    "SUBTITLE": "I'm a Software Developer",
+
+    "TITLE": "Hi I'm Juan D."
+}

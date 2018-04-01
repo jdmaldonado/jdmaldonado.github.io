@@ -1,0 +1,11 @@
+{
+    "PRESENTATION_1": "Hola soy {{name}}, Desarrollador de Software Colombiano.",
+    "PRESENTATION_2": "Amante de los Idiomas, Juegos de mesa, Rompecabezas, Video juegos, Paintball y Viajar. Hablo español (Nativo), Inglés y Francés (aún aprendiendo).",
+    "PRESENTATION_3": "Llevo 6 años desarrollando en diferentes tecnologías FrontEnd y BackEnd, Cuento con experiencia en sectores como Radio, Geoposicionamiento satelital, ERP, Aplicaciones Móviles... etc.",
+    "PRESENTATION_4": "Cofundador de {{socialBusiness}}, predicador de Javascript y amante de las tecnologías de Google.",
+
+    "SKILLS": "Habilidades",
+    "SUBTITLE": "Soy Desarrollador de Software",
+
+    "TITLE": "Hola Soy Juan D."
+}

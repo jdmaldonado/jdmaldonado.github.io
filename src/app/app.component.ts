@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import fontawesome from '@fortawesome/fontawesome';
-import { faChessKnight } from '@fortawesome/fontawesome-free-solid';
-
+import { faChessKnight, faCircleNotch, faChartBar } from '@fortawesome/fontawesome-free-solid';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -12,9 +12,20 @@ export class AppComponent implements OnInit {
 
   public skills: Array<any>;
   public showCirclesGraph: Boolean = false;
+  public me: any = {
+    name: 'Juan David Maldonado',
+    age: 26,
+    socialBusiness: `<strong>
+      <a class="green-text" href="http://www.socialbusiness.com.co" target="blank">Social Business</a>
+    </strong>`
+  };
 
-  constructor() {
-    fontawesome.library.add(faChessKnight);
+  constructor(private _translateService: TranslateService) {
+    fontawesome.library.add(faChessKnight, faCircleNotch, faChartBar);
+
+    _translateService.setDefaultLang('fr');
+
+    _translateService.use('fr');
   }
 
   ngOnInit(): void {
@@ -79,5 +90,9 @@ export class AppComponent implements OnInit {
         name: 'VueJs',
       }
     ];
+  }
+
+  public switchLanguage(language: string) {
+    this._translateService.use(language);
   }
 }
