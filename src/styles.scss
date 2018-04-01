@@ -8,10 +8,6 @@ html {
   color: #757575;
 }
 
-.section {
-  padding-top: 2.5em;
-}
-
 p {
   text-align: left;
   font-size: 16px;
@@ -52,4 +48,12 @@ strong {
 
 .text-progress {
   padding-top: 2px;
+}
+
+h3 {
+  padding-bottom: 0.5em;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  color: $primary-color;
 }

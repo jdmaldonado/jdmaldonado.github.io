@@ -10,6 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent implements OnInit {
 
+  public currentLanguage: string;
   public skills: Array<any>;
   public showCirclesGraph: Boolean = false;
   public me: any = {
@@ -23,9 +24,9 @@ export class AppComponent implements OnInit {
   constructor(private _translateService: TranslateService) {
     fontawesome.library.add(faChessKnight, faCircleNotch, faChartBar);
 
-    _translateService.setDefaultLang('fr');
-
-    _translateService.use('fr');
+    const browserLanguage = _translateService.getBrowserLang();
+    _translateService.setDefaultLang(browserLanguage);
+    this.switchLanguage(browserLanguage);
   }
 
   ngOnInit(): void {
@@ -94,5 +95,6 @@ export class AppComponent implements OnInit {
 
   public switchLanguage(language: string) {
     this._translateService.use(language);
+    this.currentLanguage = language;
   }
 }
