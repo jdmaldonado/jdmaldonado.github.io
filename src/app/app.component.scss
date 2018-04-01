@@ -53,10 +53,15 @@
 
 .section-wrapper {
   padding: 2em;
+  margin-top: 1em;
 }
 
 .parallax-container {
-  height: 95%;
+  height: 100%;
+}
+
+.navbar-fixed {
+  position: absolute
 }
 
 @media (max-width: 576px) {

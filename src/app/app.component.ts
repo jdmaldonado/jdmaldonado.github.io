@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import fontawesome from '@fortawesome/fontawesome';
 import { faChessKnight, faCircleNotch, faChartBar } from '@fortawesome/fontawesome-free-solid';
 import { TranslateService } from '@ngx-translate/core';
+
+declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -13,6 +15,7 @@ export class AppComponent implements OnInit {
   public currentLanguage: string;
   public skills: Array<any>;
   public showCirclesGraph: Boolean = false;
+  public navBarClass = 'navbar-transparent';
   public me: any = {
     name: 'Juan David Maldonado',
     age: 26,
@@ -31,6 +34,18 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this._initSkills();
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+
+    const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    if (number < 500) {
+      this.navBarClass = 'navbar-transparent';
+    } else {
+      this.navBarClass = 'navbar-color';
+    }
+
   }
 
   private _initSkills(): void {
@@ -91,6 +106,10 @@ export class AppComponent implements OnInit {
         name: 'VueJs',
       }
     ];
+  }
+
+  private _initMaterializeElements(): void {
+    $('.scrollspy').scrollSpy();
   }
 
   public switchLanguage(language: string) {

@@ -57,3 +57,19 @@ h3 {
 .dropdown-content li > a, .dropdown-content li > span {
   color: $primary-color;
 }
+
+.side-nav li > a, .side-nav li > span {
+  color: $primary-color;
+}
+
+.navbar-transparent {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.navbar-color {
+  background-color: rgba(0,0,0,0.7);
+}
+
+nav ul a {
+  color: $primary-color;
+}

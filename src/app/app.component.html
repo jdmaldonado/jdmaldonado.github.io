@@ -1,26 +1,28 @@
-<ul id='language_dropdown' class='dropdown-content'>
-  <li>
-    <a (click)="switchLanguage('es')">{{ 'SPANISH' | translate }}</a>
-  </li>
-  <li>
-    <a (click)="switchLanguage('en')">{{ 'ENGLISH' | translate }}</a>
-  </li>
-  <li>
-    <a (click)="switchLanguage('fr')">{{ 'FRENCH' | translate }}</a>
-  </li>
-</ul>
-<nav>
-  <div class="nav-wrapper">
-    <ul class="right hide-on-med-and-down">
-      <li>
-        <a materialize="dropdown" class="dropdown-trigger" data-activates='language_dropdown'>
-          {{currentLanguage | language | translate}}<i class="material-icons right">arrow_drop_down</i>
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="parallax-container">
+<div class="navbar-fixed">
+  <nav [ngClass]="navBarClass">
+    <div class="nav-wrapper">
+      <a href="#" materialize="sideNav" class="button-collapse" [materializeParams]="[{edge:'left'}]" data-activates='slide-out'>
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="#whoIam">{{ 'WHO_I_AM' | translate }}</a>
+        </li>
+        <li>
+          <a href="#skills">{{ 'SKILLS' | translate }}</a>
+        </li>
+        <li>
+          <a materialize="dropdown" class="dropdown-trigger" data-activates='language_dropdown'>
+            {{currentLanguage | language | translate}}
+            <i class="material-icons right">arrow_drop_down</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<section class="parallax-container">
   <div class="parallax hero-image" materialize="parallax">
     <img src="https://images.unsplash.com/uploads/1413349410189e2a95d2e/39982a21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cf02c9efb3e23856b47c68bb10890f5e&auto=format&fit=crop&w=1050&q=80">
     <div class="hero-text">
@@ -28,8 +30,11 @@
       <p>{{ 'SUBTITLE' | translate }}</p>
     </div>
   </div>
-</div>
-<div class="section-wrapper">
+</section>
+
+<div class="divider"></div>
+
+<section id="whoIam" class="section section-wrapper scrollspy">
   <div class="row">
     <div class="col s12 m12 l12 valign-wrapper">
       <h3 class="header">{{ 'WHO_I_AM' | translate }}...</h3>
@@ -75,9 +80,11 @@
 
     </div>
   </div>
-</div>
+</section>
 
-<section class="section-wrapper">
+<div class="divider"></div>
+
+<section id="skills" class="section section-wrapper scrollspy">
   <div class="row">
     <div class="col s12 m8 l9 valign-wrapper">
       <h3 class="header">{{ 'SKILLS' | translate }}...</h3>
@@ -113,3 +120,58 @@
     </div>
   </div>
 </section>
+
+<ul id='language_dropdown' class='dropdown-content'>
+  <li>
+    <a (click)="switchLanguage('es')">{{ 'SPANISH' | translate }}</a>
+  </li>
+  <li>
+    <a (click)="switchLanguage('en')">{{ 'ENGLISH' | translate }}</a>
+  </li>
+  <li>
+    <a (click)="switchLanguage('fr')">{{ 'FRENCH' | translate }}</a>
+  </li>
+</ul>
+
+<ul id='language_dropdown_sidebar' class='dropdown-content'>
+    <li>
+      <a (click)="switchLanguage('es')">{{ 'SPANISH' | translate }}</a>
+    </li>
+    <li>
+      <a (click)="switchLanguage('en')">{{ 'ENGLISH' | translate }}</a>
+    </li>
+    <li>
+      <a (click)="switchLanguage('fr')">{{ 'FRENCH' | translate }}</a>
+    </li>
+  </ul>
+
+<ul id="slide-out" class="side-nav">
+  <li>
+    <div class="user-view">
+      <div class="background">
+        <img src="https://images.unsplash.com/uploads/1413349410189e2a95d2e/39982a21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cf02c9efb3e23856b47c68bb10890f5e&auto=format&fit=crop&w=1050&q=80">
+      </div>
+      <a href="#!user">
+        <img class="circle" src="./assets/JDMG.jpg">
+      </a>
+      <a>
+        <span class="white-text name">Juan D Maldonado</span>
+      </a>
+      <a>
+        <span class="white-text email">maldo.s@hotmail.com</span>
+      </a>
+    </div>
+  </li>
+  <li>
+    <a href="#whoIam">{{ 'WHO_I_AM' | translate }}</a>
+  </li>
+  <li>
+    <a href="#skills">{{ 'SKILLS' | translate }}</a>
+  </li>
+  <li>
+    <a materialize="dropdown" class="dropdown-trigger" data-activates='language_dropdown_sidebar'>
+      {{currentLanguage | language | translate}}
+      <i class="material-icons right">arrow_drop_down</i>
+    </a>
+  </li>
+</ul>
