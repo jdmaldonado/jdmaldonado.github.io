@@ -12,6 +12,9 @@
           <a href="#skills">{{ 'SKILLS' | translate }}</a>
         </li>
         <li>
+          <a href="#experience">{{ 'EXPERIENCE' | translate }}</a>
+        </li>
+        <li>
           <a materialize="dropdown" class="dropdown-trigger" data-activates='language_dropdown'>
             {{currentLanguage | language | translate}}
             <i class="material-icons right">arrow_drop_down</i>
@@ -55,7 +58,7 @@
     </div>
     <div class="col s12 m5">
       <div class="container">
-        <img class="materialboxed" width="100%" src="./assets/JDMG.jpg">
+        <img class="materialboxed" width="100%" src="./assets/images/JDMG.jpg">
       </div>
     </div>
     <div class="col s12 m7">
@@ -135,6 +138,47 @@
   </div>
 </section>
 
+<div class="divider"></div>
+
+<section id="experience" class="section section-wrapper scrollspy">
+  <div class="row">
+    <div class="col s12 m12 l12 valign-wrapper">
+      <h3 class="header">{{ 'EXPERIENCE' | translate }}...</h3>
+    </div>
+    <div class="col s12 m12 l12">
+      <div class="row">
+        <div class="col s12 m6 l4 container" *ngFor="let job of jobs">
+          <div class="card large">
+            <div class="card-image center-align">
+              <img class="activator center-align" src="./assets/images/companies/{{job.image}}">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator light-green-text">{{job.name}}
+                <i class="material-icons right">more_vert</i>
+              </span>
+              <ul>
+                <li *ngFor="let task of job.tasks">
+                  <p>{{task | translate}}</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card-action">
+              <div class="col s10 m10 l10">
+                {{job.period.start}} - {{job.period.end || 'CURRENT' | translate }}
+              </div>
+              <div class="col s2 m2 l2">
+                <a href="{{job.link}}" target="blank">
+                  <i class="material-icons">link</i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <ul id='language_dropdown' class='dropdown-content'>
   <li>
     <a (click)="switchLanguage('es')">{{ 'SPANISH' | translate }}</a>
@@ -166,7 +210,7 @@
         <img src="https://images.unsplash.com/uploads/1413349410189e2a95d2e/39982a21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cf02c9efb3e23856b47c68bb10890f5e&auto=format&fit=crop&w=1050&q=80">
       </div>
       <a href="#!user">
-        <img class="circle" src="./assets/JDMG.jpg">
+        <img class="circle" src="./assets/images/JDMG.jpg">
       </a>
       <a>
         <span class="white-text name">Juan D Maldonado</span>

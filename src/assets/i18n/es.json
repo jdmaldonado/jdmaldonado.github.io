@@ -1,5 +1,6 @@
 {
     "ENGLISH": "Inglés",
+    "EXPERIENCE": "Experiencia",
 
     "FRENCH": "Francés",
 
@@ -8,6 +9,10 @@
     "PRESENTATION_3": "Llevo 6 años desarrollando en diferentes tecnologías FrontEnd y BackEnd, Cuento con experiencia en sectores como Radio, Geoposicionamiento satelital, ERP, Aplicaciones Móviles... etc.",
     "PRESENTATION_4": "Cofundador de {{socialBusiness}}, predicador de Javascript y amante de las tecnologías de Google.",
     
+    "SB_TASK_1": "Creador de la aplicación inicial de Social Business",
+    "SB_TASK_2": "Crear módulos administrativos",
+    "SB_TASK_3": "Social Business Preview",
+    "SB_TASK_4": "Soporte de funcionalidades",
     "SKILLS": "Habilidades",
     "SPANISH": "Español",
     "SUBTITLE": "Soy Desarrollador de Software",

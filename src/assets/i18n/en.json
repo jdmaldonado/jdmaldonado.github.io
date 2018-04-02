@@ -1,5 +1,6 @@
 {
     "ENGLISH": "English",
+    "EXPERIENCE": "Experience",
 
     "FRENCH": "French",
 
@@ -8,6 +9,10 @@
     "PRESENTATION_3": "I've been developing for 6 years, in different technologies FrontEnd and BackEnd, i have experience in areas like Radio station, Satelital Geopositioning, ERP, Mobile Applications... etc.",
     "PRESENTATION_4": "Cofounder of {{socialBusiness}}, Javascript speaker and big lover of Google's Technologies.",
     
+    "SB_TASK_1": "Creator of Social Business App",
+    "SB_TASK_2": "Create admin modules",
+    "SB_TASK_3": "Social Business Preview",
+    "SB_TASK_4": "Support of functionalities",
     "SKILLS": "Skills",
     "SPANISH": "Spanish",
     "SUBTITLE": "I'm a Software Developer",

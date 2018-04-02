@@ -78,6 +78,12 @@ nav ul a {
   color: $primary-color;
 }
 
+.card .card-image img {
+  width: auto;
+  max-height: 200px;
+  display: unset;
+}
+
 .social-button:hover {
   background-color: $primary-color;
   color: #757575;

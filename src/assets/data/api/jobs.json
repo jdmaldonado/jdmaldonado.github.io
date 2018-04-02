@@ -1,0 +1,84 @@
+[{
+    "name": "Organización Equitel",
+    "city": "BOG",
+    "image": "EQUITEL.jpg",
+    "link": "http://www.equitel.com.co/",
+    "period": {
+      "start": "11/2011",
+      "end": "06/2014"
+    },
+    "post": "SOFTWARE_DEVELOPER_JR",
+    "tasks": [
+      "EQUITEL_TASK_1",
+      "EQUITEL_TASK_2",
+      "EQUITEL_TASK_3",
+      "EQUITEL_TASK_3"
+    ]
+  },
+  {
+    "name": "LAP Technologies",
+    "city": "MED",
+    "image": "LAP.gif",
+    "link": "http://www.laptechnologies.com.co/",
+    "period": {
+      "start": "06/2014",
+      "end": "02/2016"
+    },
+    "post": "SOFTWARE_DEVELOPER",
+    "tasks": [
+      "LAP_TASK_1",
+      "LAP_TASK_2",
+      "LAP_TASK_3",
+      "LAP_TASK_4"
+    ]
+  },
+  {
+    "name": "PSL",
+    "city": "MED",
+    "image": "PSL.jpg",
+    "link": "http://psl.com.co/",
+    "period": {
+      "start": "02/2016",
+      "end": "08/2016"
+    },
+    "post": "DEVELOPMENT_ANALYST",
+    "tasks": [
+      "PSL_TASK_1",
+      "PSL_TASK_2",
+      "PSL_TASK_3",
+      "PSL_TASK_4"
+    ]
+  },
+  {
+    "name": "Advice Interactive Group",
+    "city": "AUS",
+    "image": "ADVICE.jpg",
+    "link": "https://www.adviceinteractivegroup.com/",
+    "period": {
+      "start": "08/2016"
+    },
+    "post": "SOFTWARE_DEVELOPER",
+    "tasks": [
+      "ADVICE_TASK_1",
+      "ADVICE_TASK_2",
+      "ADVICE_TASK_3",
+      "ADVICE_TASK_4"
+    ]
+  },
+  {
+    "name": "Social Business",
+    "city": "BOG",
+    "image": "SB.png",
+    "link": "http://socialbusiness.com.co/",
+    "period": {
+      "start": "04/2017"
+    },
+    "post": "CTO",
+    "tasks": [
+      "SB_TASK_1",
+      "SB_TASK_2",
+      "SB_TASK_3",
+      "SB_TASK_4"
+    ]
+  }
+]

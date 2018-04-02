@@ -3,6 +3,7 @@ import fontawesome from '@fortawesome/fontawesome';
 import { faChessKnight, faCircleNotch, faChartBar } from '@fortawesome/fontawesome-free-solid';
 import { faFacebookF } from '@fortawesome/fontawesome-free-brands';
 import { TranslateService } from '@ngx-translate/core';
+import { DataService } from './services/data.service';
 
 declare var $: any;
 
@@ -15,6 +16,7 @@ export class AppComponent implements OnInit {
 
   public currentLanguage: string;
   public skills: Array<any>;
+  public jobs: Array<any>;
   public showCirclesGraph: Boolean = false;
   public navBarClass = 'navbar-transparent';
   public me: any = {
@@ -25,7 +27,10 @@ export class AppComponent implements OnInit {
     </strong>`
   };
 
-  constructor(private _translateService: TranslateService) {
+  constructor(
+    private _dataService: DataService,
+    private _translateService: TranslateService
+  ) {
     fontawesome.library.add(faChessKnight, faCircleNotch, faChartBar, faFacebookF);
 
     const browserLanguage = _translateService.getBrowserLang();
@@ -34,7 +39,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this._initSkills();
+    this._getData();
   }
 
   @HostListener('window:scroll', [])
@@ -49,64 +54,12 @@ export class AppComponent implements OnInit {
 
   }
 
-  private _initSkills(): void {
-    this.skills = [
-      {
-        current: 90,
-        max: 100,
-        name: 'HTML'
-      },
-      {
-        current: 70,
-        max: 100,
-        name: 'CSS'
-      },
-      {
-        current: 90,
-        max: 100,
-        name: 'Javascript'
-      },
-      {
-        current: 80,
-        max: 100,
-        name: 'Angular'
-      },
-      {
-        current: 75,
-        max: 100,
-        name: 'NodeJs'
-      },
-      {
-        current: 85,
-        max: 100,
-        name: 'Git'
-      },
-      {
-        current: 60,
-        max: 100,
-        name: '.Net'
-      },
-      {
-        current: 70,
-        max: 100,
-        name: 'MongoDB',
-      },
-      {
-        current: 85,
-        max: 100,
-        name: 'Firebase',
-      },
-      {
-        current: 90,
-        max: 100,
-        name: 'Ionic',
-      },
-      {
-        current: 40,
-        max: 100,
-        name: 'VueJs',
-      }
-    ];
+  private _getData(): void {
+    this._dataService.getSkillsData()
+      .subscribe((skills) => this.skills = skills);
+
+    this._dataService.getJobsData()
+      .subscribe((jobs) => this.jobs = jobs.reverse());
   }
 
   private _initMaterializeElements(): void {
