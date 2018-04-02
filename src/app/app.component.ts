@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import fontawesome from '@fortawesome/fontawesome';
 import { faChessKnight, faCircleNotch, faChartBar } from '@fortawesome/fontawesome-free-solid';
+import { faFacebookF } from '@fortawesome/fontawesome-free-brands';
 import { TranslateService } from '@ngx-translate/core';
 
 declare var $: any;
@@ -25,7 +26,7 @@ export class AppComponent implements OnInit {
   };
 
   constructor(private _translateService: TranslateService) {
-    fontawesome.library.add(faChessKnight, faCircleNotch, faChartBar);
+    fontawesome.library.add(faChessKnight, faCircleNotch, faChartBar, faFacebookF);
 
     const browserLanguage = _translateService.getBrowserLang();
     _translateService.setDefaultLang(browserLanguage);

@@ -30,6 +30,20 @@
       <p>{{ 'SUBTITLE' | translate }}</p>
     </div>
   </div>
+  <div class="card social-button-container center-align">
+    <a href="https://www.facebook.com/jdmaldonado06" target="blank" class="btn-floating social-button btn-large facebook">
+      <i class="fab fa-facebook-f fa-lg"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/jdmaldonado06" target="blank" class="btn-floating social-button btn-large linkedIn">
+      <i class="fab fa-linkedin-in fa-lg"></i>
+    </a>
+    <a href="https://github.com/jdmaldonado" target="blank" class="btn-floating social-button btn-large github">
+      <i class="fab fa-github fa-lg"></i>
+    </a>
+    <a href="https://twitter.com/jdmaldonado06" target="blank" class="btn-floating social-button btn-large twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </div>
 </section>
 
 <div class="divider"></div>
@@ -134,16 +148,16 @@
 </ul>
 
 <ul id='language_dropdown_sidebar' class='dropdown-content'>
-    <li>
-      <a (click)="switchLanguage('es')">{{ 'SPANISH' | translate }}</a>
-    </li>
-    <li>
-      <a (click)="switchLanguage('en')">{{ 'ENGLISH' | translate }}</a>
-    </li>
-    <li>
-      <a (click)="switchLanguage('fr')">{{ 'FRENCH' | translate }}</a>
-    </li>
-  </ul>
+  <li>
+    <a (click)="switchLanguage('es')">{{ 'SPANISH' | translate }}</a>
+  </li>
+  <li>
+    <a (click)="switchLanguage('en')">{{ 'ENGLISH' | translate }}</a>
+  </li>
+  <li>
+    <a (click)="switchLanguage('fr')">{{ 'FRENCH' | translate }}</a>
+  </li>
+</ul>
 
 <ul id="slide-out" class="side-nav">
   <li>
