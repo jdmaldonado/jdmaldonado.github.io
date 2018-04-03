@@ -1,13 +1,33 @@
 {
+    "ADVICE_TASK_1": "Desarrollo de aplicaciones en ionic (2.x >)",
+    "ADVICE_TASK_2": "Desarrollo y soporte en Angular (1.x & 2.x >)",
+    "ADVICE_TASK_3": "Control de Base de datos (Firebase)",
+    "ADVICE_TASK_4": "Desarrollo y soporte en NodeJS",
+
+    "CURRENT": "Actual",
+
     "ENGLISH": "Inglés",
+    "EQUITEL_TASK_1": "Soporte en páginas y aplicaciones web.",
+    "EQUITEL_TASK_2": "T-SQL, reportes ERP (Microsoft Dynamics)",
+    "EQUITEL_TASK_3": "Desarrollo en AngularJs",
+    "EQUITEL_TASK_4": "Soporte y desarrollo en C# y PHP",
     "EXPERIENCE": "Experiencia",
 
     "FRENCH": "Francés",
+
+    "LAP_TASK_1": "Migración de PHP a (MeteorJS y .Net)",
+    "LAP_TASK_2": "Soporte de aplicaciones (PHP y ExtJS)",
+    "LAP_TASK_3": "Control de usuarios (AngularJS, C#, MeteorJs)",
+    "LAP_TASK_4": "Control de bases de datos (SQL Server, MongoDB)",
 
     "PRESENTATION_1": "Hola soy {{name}}, Desarrollador de Software Colombiano.",
     "PRESENTATION_2": "Amante de los Idiomas, Juegos de mesa, Rompecabezas, Video juegos, Paintball y Viajar. Hablo español (Nativo), Inglés y Francés (aún aprendiendo).",
     "PRESENTATION_3": "Llevo 6 años desarrollando en diferentes tecnologías FrontEnd y BackEnd, Cuento con experiencia en sectores como Radio, Geoposicionamiento satelital, ERP, Aplicaciones Móviles... etc.",
     "PRESENTATION_4": "Cofundador de {{socialBusiness}}, predicador de Javascript y amante de las tecnologías de Google.",
+    "PSL_TASK_1": "Migración de plataformas a .Net MVC",
+    "PSL_TASK_2": "Soporte de aplicaciones  (C#, JavaScript)",
+    "PSL_TASK_3": "Control de Bases de datos (SQL)",
+    "PSL_TASK_4": "Scrum y metodologías ágiles",
     
     "SB_TASK_1": "Creador de la aplicación inicial de Social Business",
     "SB_TASK_2": "Crear módulos administrativos",

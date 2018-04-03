@@ -1,13 +1,33 @@
 {
+    "ADVICE_TASK_1": "Creation of Mobile Applications in ionic (2.x >)",
+    "ADVICE_TASK_2": "Develop and support in Angular (1.x & 2.x >).",
+    "ADVICE_TASK_3": "Database Management with firebase",
+    "ADVICE_TASK_4": "Develop and support in Node Js",
+
+    "CURRENT": "Current",
+
     "ENGLISH": "English",
+    "EQUITEL_TASK_1": "Support in web pages and applications",
+    "EQUITEL_TASK_2": "T-SQL, reports ERP (Microsoft Dynamics)",
+    "EQUITEL_TASK_3": "Devlopment in AngularJs",
+    "EQUITEL_TASK_4": "Support and development in C# y PHP",
     "EXPERIENCE": "Experience",
 
     "FRENCH": "French",
+
+    "LAP_TASK_1": "Migration from PHP to (MeteorJS and .Net)",
+    "LAP_TASK_2": "Support of aplications (PHP and ExtJS)",
+    "LAP_TASK_3": "User’s control (AngularJS, C#, MeteorJs)",
+    "LAP_TASK_4": "Database Management (SQL Server, MongoDB)",
 
     "PRESENTATION_1": "Hi, My name is {{name}}, i'm a Colombian Software Developer.",
     "PRESENTATION_2": "I love the languages, board games, puzzles. video games and traveling, i speak spanish (native), english and french (still learning).",
     "PRESENTATION_3": "I've been developing for 6 years, in different technologies FrontEnd and BackEnd, i have experience in areas like Radio station, Satelital Geopositioning, ERP, Mobile Applications... etc.",
     "PRESENTATION_4": "Cofounder of {{socialBusiness}}, Javascript speaker and big lover of Google's Technologies.",
+    "PSL_TASK_1": "Migration of platform to .Net MVC",
+    "PSL_TASK_2": "Support of applications (C#, JavaScript)",
+    "PSL_TASK_3": "Databases Management (SQL Server)",
+    "PSL_TASK_4": "Scrum y Agile Methodologies",
     
     "SB_TASK_1": "Creator of Social Business App",
     "SB_TASK_2": "Create admin modules",
