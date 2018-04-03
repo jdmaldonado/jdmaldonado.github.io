@@ -2,8 +2,9 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import fontawesome from '@fortawesome/fontawesome';
 import { faChessKnight, faCircleNotch, faChartBar } from '@fortawesome/fontawesome-free-solid';
 import { faFacebookF } from '@fortawesome/fontawesome-free-brands';
-import { TranslateService } from '@ngx-translate/core';
+
 import { DataService } from './services/data.service';
+import { LanguageService } from './services/language.service';
 
 declare var $: any;
 
@@ -29,13 +30,16 @@ export class AppComponent implements OnInit {
 
   constructor(
     private _dataService: DataService,
-    private _translateService: TranslateService
+    private _languageService: LanguageService,
   ) {
     fontawesome.library.add(faChessKnight, faCircleNotch, faChartBar, faFacebookF);
 
-    const browserLanguage = _translateService.getBrowserLang();
-    _translateService.setDefaultLang(browserLanguage);
-    this.switchLanguage(browserLanguage);
+    _languageService.getCurrentLanguage()
+    .subscribe((language) => {
+      console.log(language);
+      this.currentLanguage = language;
+    });
+    _languageService.configureLanguage();
   }
 
   ngOnInit(): void {
@@ -66,8 +70,7 @@ export class AppComponent implements OnInit {
     $('.scrollspy').scrollSpy();
   }
 
-  public switchLanguage(language: string) {
-    this._translateService.use(language);
-    this.currentLanguage = language;
+  public switchLanguage(language): void {
+    this._languageService.setLanguage(language);
   }
 }

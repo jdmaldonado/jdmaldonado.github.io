@@ -104,3 +104,19 @@ nav ul a {
 .twitter {
   background-color: #009EF6;
 }
+
+.card.small .card-image + .card-content, .card.medium .card-image + .card-content, .card.large .card-image + .card-content {
+  max-height: 55%;
+}
+
+@media (max-width: 992px) {
+  .card .card-image img {
+    width: auto;
+    max-height: 130px;
+    display: unset;
+  }
+
+  p {
+    line-height: 20px;
+  }
+}

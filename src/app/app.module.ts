@@ -12,6 +12,7 @@ import { StatusColorPipe } from './pipes/status-color.pipe';
 import { LanguagePipe } from './pipes/language.pipe';
 
 import { DataService } from './services/data.service';
+import { LanguageService } from './services/language.service';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -37,7 +38,10 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     })
   ],
-  providers: [DataService],
+  providers: [
+    DataService,
+    LanguageService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
