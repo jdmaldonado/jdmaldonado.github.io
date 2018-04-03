@@ -109,6 +109,10 @@ nav ul a {
   max-height: 55%;
 }
 
+.card .card-content p {
+  line-height: 20px;
+}
+
 @media (max-width: 992px) {
   .card .card-image img {
     width: auto;
