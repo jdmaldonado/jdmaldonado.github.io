@@ -153,7 +153,8 @@
               <img class="activator center-align" src="./assets/images/companies/{{job.image}}">
             </div>
             <div class="card-content">
-              <span class="card-title activator light-green-text">{{job.name}}</span>
+                <span class="new badge light-green" data-badge-caption="">{{job.city | city}}</span><span class="card-title activator light-green-text">{{job.name}}</span>
+              <p><a>{{job.post | translate}}</a></p>
               <ul>
                 <li *ngFor="let task of job.tasks">
                   <p>{{task | translate}}</p>

@@ -13,6 +13,7 @@ import { LanguagePipe } from './pipes/language.pipe';
 
 import { DataService } from './services/data.service';
 import { LanguageService } from './services/language.service';
+import { CityPipe } from './pipes/city.pipe';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -23,7 +24,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     StatusColorPipe,
-    LanguagePipe
+    LanguagePipe,
+    CityPipe
   ],
   imports: [
     BrowserModule,
