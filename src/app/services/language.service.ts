@@ -17,7 +17,6 @@ export class LanguageService {
 
   configureLanguage(): void {
     const userLanguage = window.localStorage.getItem('language');
-    console.log('from localStorage', userLanguage);
     if (!userLanguage) {
       const browserLanguage = this._translateService.getBrowserLang();
       this.setLanguage(browserLanguage);

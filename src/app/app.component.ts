@@ -36,7 +36,6 @@ export class AppComponent implements OnInit {
 
     _languageService.getCurrentLanguage()
     .subscribe((language) => {
-      console.log(language);
       this.currentLanguage = language;
     });
     _languageService.configureLanguage();
