@@ -10,7 +10,7 @@ html {
 
 p {
   text-align: left;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   padding-bottom: 10px;
 }
@@ -120,7 +120,12 @@ nav ul a {
     display: unset;
   }
 
+  .card .card-content p {
+    line-height: 18px;
+  }
+
   p {
     line-height: 20px;
+    font-size: 17px;
   }
 }

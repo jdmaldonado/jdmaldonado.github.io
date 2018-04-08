@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="col s12 m7">
-      <ul class="fa-ul container how-i-am-text">
+      <ul class="fa-ul container">
         <li>
           <span class="fa-li">
             <i class="fas fa-chess-knight fa-lg li-icon"></i>
@@ -153,7 +153,7 @@
               <img class="activator center-align" src="./assets/images/companies/{{job.image}}">
             </div>
             <div class="card-content">
-                <span class="new badge light-green" data-badge-caption="">{{job.city | city}}</span><span class="card-title activator light-green-text">{{job.name}}</span>
+                <span class="new badge light-green" data-badge-caption="">{{job.city | city}}</span><span class="card-title light-green-text">{{job.name}}</span>
               <p><a>{{job.post | translate}}</a></p>
               <ul>
                 <li *ngFor="let task of job.tasks">
