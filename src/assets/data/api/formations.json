@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Universidad Central",
+    "link": "http://www.ucentral.edu.co/",
+    "career": "SYSTEMS_ENGINEERING",
+    "date": {
+      "start": "2011",
+      "end": "HOMOLOGATED"
+    }
+  },
+  {
+    "name": "Politécnico Grancolombiano",
+    "link": "https://www.poli.edu.co/",
+    "career": "SYSTEMS_ENGINEERING",
+    "date": {
+      "start": "2017"
+    }
+  },
+  {
+    "name": "Alianza Francesa",
+    "link": "http://medellin.alianzafrancesa.org.co/",
+    "career": "FRENCH_SPEAKER",
+    "date": {
+      "start": "2017"
+    }
+  }
+]

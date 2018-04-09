@@ -15,6 +15,9 @@
           <a href="#experience">{{ 'EXPERIENCE' | translate }}</a>
         </li>
         <li>
+          <a href="#formation">{{ 'FORMATION' | translate }}</a>
+        </li>
+        <li>
           <a materialize="dropdown" class="dropdown-trigger" data-activates='language_dropdown'>
             {{currentLanguage | language | translate}}
             <i class="material-icons right">arrow_drop_down</i>
@@ -153,8 +156,11 @@
               <img class="activator center-align" src="./assets/images/companies/{{job.image}}">
             </div>
             <div class="card-content">
-                <span class="new badge light-green" data-badge-caption="">{{job.city | city}}</span><span class="card-title light-green-text">{{job.name}}</span>
-              <p><a>{{job.post | translate}}</a></p>
+              <span class="new badge light-green" data-badge-caption="">{{job.city | city}}</span>
+              <span class="card-title light-green-text">{{job.name}}</span>
+              <p>
+                <a>{{job.post | translate}}</a>
+              </p>
               <ul>
                 <li *ngFor="let task of job.tasks">
                   <p>{{task | translate}}</p>
@@ -170,6 +176,32 @@
                   <i class="material-icons">link</i>
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="formation" class="section section-wrapper scrollspy">
+  <div class="row">
+    <div class="col s12 m12 l12 valign-wrapper">
+      <h3 class="header">{{ 'FORMATION' | translate }}...</h3>
+    </div>
+    <div class="col s12 m12 l12">
+      <div class="row">
+        <div class="col s12 m6" *ngFor="let formation of formations">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title light-green-text">{{formation.name}}</span>
+              <p>{{formation.career | translate}}</p>
+            </div>
+            <div class="card-action">
+              <a href="{{formation.link}}" target="blank">{{ 'WEB_PAGE' | translate }}</a>
+              {{formation.date.start}} - {{formation.date.end || 'CURRENT' | translate }}
             </div>
           </div>
         </div>
@@ -227,6 +259,9 @@
   </li>
   <li>
     <a href="#experience">{{ 'EXPERIENCE' | translate }}</a>
+  </li>
+  <li>
+    <a href="#formation">{{ 'FORMATION' | translate }}</a>
   </li>
   <li>
     <a materialize="dropdown" class="dropdown-trigger" data-activates='language_dropdown_sidebar'>

@@ -7,8 +7,8 @@ export class CityPipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
     const cities = {
-      MDE: 'Bogotá',
-      BOG: 'Medellín',
+      MDE: 'Medellín',
+      BOG: 'Bogotá',
       AUS: 'Austin Tx.',
       default: 'Medellín',
     };

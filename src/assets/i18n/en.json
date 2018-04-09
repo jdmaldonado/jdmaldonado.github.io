@@ -16,7 +16,11 @@
     "EQUITEL_TASK_4": "Support and development in C# y PHP",
     "EXPERIENCE": "Experience",
 
+    "FORMATION": "Formation",
     "FRENCH": "French",
+    "FRENCH_SPEAKER": "Francophone", 
+
+    "HOMOLOGATED": "Homologated",
 
     "LAP_TASK_1": "Migration from PHP to (MeteorJS and .Net)",
     "LAP_TASK_2": "Support of aplications (PHP and ExtJS)",
@@ -41,8 +45,10 @@
     "SOFTWARE_DEVELOPER_JR": "Software Junior Developer",
     "SPANISH": "Spanish",
     "SUBTITLE": "I'm a Software Developer",
+    "SYSTEMS_ENGINEERING": "Systems Engineering",
     
     "TITLE": "Hi! I'm Juan D.",
 
+    "WEB_PAGE": "Web Page",
     "WHO_I_AM": "Who I am"
 }

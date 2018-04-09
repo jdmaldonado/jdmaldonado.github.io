@@ -16,8 +16,9 @@ declare var $: any;
 export class AppComponent implements OnInit {
 
   public currentLanguage: string;
-  public skills: Array<any>;
+  public formations: Array<any>;
   public jobs: Array<any>;
+  public skills: Array<any>;
   public showCirclesGraph: Boolean = false;
   public navBarClass = 'navbar-transparent';
   public me: any = {
@@ -60,6 +61,9 @@ export class AppComponent implements OnInit {
   private _getData(): void {
     this._dataService.getSkillsData()
       .subscribe((skills) => this.skills = skills);
+
+    this._dataService.getFormationsData()
+      .subscribe((formations) => this.formations = formations);
 
     this._dataService.getJobsData()
       .subscribe((jobs) => this.jobs = jobs.reverse());
