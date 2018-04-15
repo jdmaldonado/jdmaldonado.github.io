@@ -28,8 +28,8 @@
     "LAP_TASK_4": "Control de bases de datos (SQL Server, MongoDB)",
 
     "PRESENTATION_1": "Hola soy {{name}}, Desarrollador de Software Colombiano.",
-    "PRESENTATION_2": "Amante de los Idiomas, Juegos de mesa, Rompecabezas, Video juegos, Paintball y Viajar. Hablo español (Nativo), Inglés y Francés (aún aprendiendo).",
-    "PRESENTATION_3": "Llevo 6 años desarrollando en diferentes tecnologías FrontEnd y BackEnd, Cuento con experiencia en sectores como Radio, Geoposicionamiento satelital, ERP, Aplicaciones Móviles... etc.",
+    "PRESENTATION_2": "Amante de los Idiomas, juegos de mesa, rompecabezas, video juegos, paintball y viajar. Hablo español (nativo), Inglés y Francés (aún aprendiendo).",
+    "PRESENTATION_3": "Llevo 6 años desarrollando en diferentes tecnologías FrontEnd y BackEnd, Cuento con experiencia en sectores como radio, geoposicionamiento satelital, ERP, aplicaciones móviles... etc.",
     "PRESENTATION_4": "Cofundador de {{socialBusiness}}, predicador de Javascript y amante de las tecnologías de Google.",
     "PSL_TASK_1": "Migración de plataformas a .Net MVC",
     "PSL_TASK_2": "Soporte de aplicaciones  (C#, JavaScript)",
@@ -44,10 +44,10 @@
     "SOFTWARE_DEVELOPER": "Desarrollador de Software",
     "SOFTWARE_DEVELOPER_JR": "Desarrollador de Software Junior",
     "SPANISH": "Español",
-    "SUBTITLE": "Soy Desarrollador de Software",
+    "SUBTITLE": "Desarrollador de Software",
     "SYSTEMS_ENGINEERING": "Ingeniería de Sistemas",
     
-    "TITLE": "Hola! Soy Juan D.",
+    "TITLE": "¡Hola! Soy Juan D.",
 
     "WEB_PAGE": "Página Web",
     "WHO_I_AM": "Quién soy"
