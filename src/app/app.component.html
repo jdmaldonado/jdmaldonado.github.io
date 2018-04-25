@@ -244,10 +244,28 @@
         <img class="circle" src="./assets/images/JDMG.jpg">
       </a>
       <a>
-        <span class="white-text name">Juan D Maldonado</span>
+        <span class="white-text name">
+          <i class="fas fa-address-card light-green-text"></i>
+          &nbsp;Juan David Maldonado
+        </span>
+      </a>
+      <a href="mailto:maldo.s@hotmail.com">
+        <span class="white-text name">
+          <i class="fas fa-at light-green-text"></i>
+          &nbsp;maldo.s@hotmail.com
+        </span>
+      </a>
+      <a href="tel:+573046504259">
+        <span class="white-text name">
+          <i class="fas fa-phone light-green-text"></i>
+          &nbsp;(+57) 304 650 4259
+        </span>
       </a>
       <a>
-        <span class="white-text email">maldo.s@hotmail.com</span>
+        <span class="white-text name">
+          <i class="fas fa-map-marker light-green-text"></i>
+          &nbsp;Medell&iacute;n / Colombia
+        </span>
       </a>
     </div>
   </li>
@@ -265,8 +283,63 @@
   </li>
   <li>
     <a materialize="dropdown" class="dropdown-trigger" data-activates='language_dropdown_sidebar'>
-      {{currentLanguage | language | translate}}
+      {{ currentLanguage | language | translate }}
       <i class="material-icons right">arrow_drop_down</i>
     </a>
   </li>
 </ul>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l8 m6">
+        <h5 class="light-green-text">{{ 'ABOUT' | translate }}</h5>
+        <p class="grey-text text-lighten-4 p-footer">{{ 'ABOUT_TEXT' | translate }}</p>
+        <p class="grey-text text-lighten-4 p-footer" [innerHTML]="'PRESENTATION_4' | translate:me"></p>
+      </div>
+      <div class="col l4 m6">
+        <h5 class="light-green-text">{{ 'CONTACT_INFO' | translate }}</h5>
+        <ul class="fa-ul">
+          <li>
+            <span class="fa-li fa-footer">
+              <i class="fas fa-address-card li-icon"></i>
+            </span>
+            <p class="p-footer">
+              Juan David Maldonado Gómez
+            </p>
+          </li>
+          <li>
+            <span class="fa-li fa-footer">
+              <i class="fas fa-at li-icon"></i>
+            </span>
+            <p class="p-footer">
+              <a href="mailto:maldo.s@hotmail.com" style="color: #FFFFFF">maldo.s@hotmail.com</a>
+            </p>
+          </li>
+          <li>
+            <span class="fa-li fa-footer">
+              <i class="fas fa-phone li-icon"></i>
+            </span>
+            <p class="p-footer">
+              <a href="tel:+573046504259" style="color: #FFFFFF">(+57) 304 650 4259</a>
+            </p>
+          </li>
+          <li>
+            <span class="fa-li fa-footer">
+              <i class="fas fa-map-marker li-icon"></i>
+            </span>
+            <p class="p-footer">
+              Medell&iacute;n / Colombia
+            </p>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      &copy; 2018 Copyright - All Rights Reserved
+    </div>
+  </div>
+</footer>

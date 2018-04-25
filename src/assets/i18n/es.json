@@ -1,9 +1,12 @@
 {
+    "ABOUT": "Acerca",
+    "ABOUT_TEXT": "Desarrollador de Software web y móvil, español, inglés y francés",
     "ADVICE_TASK_1": "Desarrollo de aplicaciones en ionic (2.x >)",
     "ADVICE_TASK_2": "Desarrollo y soporte en Angular (1.x & 2.x >)",
     "ADVICE_TASK_3": "Control de Base de datos (Firebase)",
     "ADVICE_TASK_4": "Desarrollo y soporte en NodeJS",
 
+    "CONTACT_INFO": "Información de contacto",
     "CURRENT": "Actual",
     "CTO": "Director de Tecnología",
 
@@ -47,7 +50,7 @@
     "SUBTITLE": "Desarrollador de Software",
     "SYSTEMS_ENGINEERING": "Ingeniería de Sistemas",
     
-    "TITLE": "¡Hola! Soy Juan D.",
+    "TITLE": "¡Hola! Soy Juan David",
 
     "WEB_PAGE": "Página Web",
     "WHO_I_AM": "Quién soy"

@@ -10,9 +10,19 @@ html {
 
 p {
   text-align: left;
-  font-size: 20px;
-  line-height: 24px;
-  padding-bottom: 10px;
+  font-size: 19px;
+  line-height: 30px;
+  padding-bottom: 9px;
+}
+
+.p-footer {
+  text-align: left;
+  font-size: 1em;
+  padding-bottom: 0px !important;
+}
+
+.fa-footer {
+  padding-top: 5px;
 }
 
 strong {
@@ -20,7 +30,7 @@ strong {
 }
 
 .green-text {
-  color: $primary-color;
+  color: $primary-color !important;
 }
 
 .li-icon {
@@ -64,6 +74,10 @@ h3 {
 
 .social-button-container > a {
   margin-right: 1em;
+}
+
+.user-view {
+  padding: 10px !important;
 }
 
 .navbar-transparent {
@@ -114,6 +128,10 @@ nav ul a {
   font-size: 17px;
 }
 
+.page-footer {
+  background-color: rgba(0,0,0,0.7);
+}
+
 @media (max-width: 992px) {
   .card .card-image img {
     width: auto;
@@ -126,7 +144,7 @@ nav ul a {
   }
 
   p {
-    line-height: 20px;
+    line-height: 28px;
     font-size: 17px;
   }
 }

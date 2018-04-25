@@ -1,9 +1,12 @@
 {
+    "ABOUT": "About",
+    "ABOUT_TEXT": "Web & mobile Software Developer, spanish, english & french",
     "ADVICE_TASK_1": "Creation of Mobile Applications in ionic (2.x >)",
     "ADVICE_TASK_2": "Develop and support in Angular (1.x & 2.x >).",
     "ADVICE_TASK_3": "Database Management with firebase",
     "ADVICE_TASK_4": "Develop and support in Node Js",
 
+    "CONTACT_INFO": "Contact Info",
     "CURRENT": "Current",
     "CTO": "CTO",
 
@@ -47,7 +50,7 @@
     "SUBTITLE": "Software Developer",
     "SYSTEMS_ENGINEERING": "Systems Engineering",
     
-    "TITLE": "¡Hi! I'm Juan D.",
+    "TITLE": "¡Hi! I'm Juan David",
 
     "WEB_PAGE": "Web Page",
     "WHO_I_AM": "Who I am"
