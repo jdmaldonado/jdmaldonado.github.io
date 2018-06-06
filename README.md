@@ -1,4 +1,9 @@
-# Jdmaldonadog.Com
+# jdmaldonado.com.co
+
+This my personal web page [www.jdmaldonado.com.co](https://www.jdmaldonado.com.co).
+
+It supports three laguages (español, english & française), It uses Angular 5 and firebase.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
